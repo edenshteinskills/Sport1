@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import {Platform} from 'react-native';
+//import {Platform} from 'react-native';
 import {createStackNavigator} from '@react-navigation/stack';
 import {NavigationContainer} from '@react-navigation/native';
 import SplashScreen from 'react-native-splash-screen';
