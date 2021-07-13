@@ -9,7 +9,7 @@ import MainFeedScreen from './src/screens/MainFeedScreen';
 import {useEffect} from 'react';
 
 const Stack = createStackNavigator();
-//dffdf
+//dffdfggggg
 export default function App() {
   useEffect(() => {
     SplashScreen.hide();
