@@ -5,15 +5,14 @@
         android:drawable="@color/splashscreen_bg"/>
 
     <item
-        android:width="140pt"
-        android:height="28pt"
+        android:width="120pt"
+        android:height="27pt"
         android:drawable="@mipmap/splashicon"
         android:gravity="center" />
     <item
-        android:width="120pt"
-        android:height="10pt"
+        android:width="100pt"
+        android:height="9pt"
         android:drawable="@mipmap/moveo"
-        android:gravity="bottom"
-        android:left="22pt"/>
+        android:gravity="center_horizontal|bottom"/>
 
 </layer-list>
