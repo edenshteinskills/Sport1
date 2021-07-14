@@ -12,7 +12,7 @@ const Stack = createStackNavigator();
 
 export default function App() {
   const [hideSplash, setHideSplash] = useState(false);
-
+  //ffffff
   useEffect(() => {
     setTimeout(() => {
       setHideSplash(true);
