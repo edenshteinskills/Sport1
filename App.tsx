@@ -6,6 +6,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import SplashScreen from 'react-native-splash-screen';
 
 import MainFeedScreen from './src/screens/MainFeedScreen';
+import LogoTitle from './src/components/LogoTitle';
 import {useEffect, useState} from 'react';
 
 const Stack = createStackNavigator();
@@ -25,7 +26,17 @@ export default function App() {
 
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator
+        screenOptions={{
+          headerStyle: {
+            backgroundColor: '#000000',
+          },
+          headerTitleContainerStyle: {
+            width: '100%',
+          },
+
+          headerTitle: () => <LogoTitle />,
+        }}>
         <Stack.Screen name="Home" component={MainFeedScreen} />
       </Stack.Navigator>
     </NavigationContainer>
