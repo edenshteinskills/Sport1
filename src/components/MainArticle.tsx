@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.26,
     elevation: 8,
     backgroundColor: 'black',
-    position: 'absolute',
+    //position: 'absolute',
     height: deviceWidth * 0.8,
     width: deviceWidth * 1,
   },
