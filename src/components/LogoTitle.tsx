@@ -20,7 +20,6 @@ const styles = StyleSheet.create({
   container: {
     justifyContent: 'center',
     alignItems: 'center',
-    display: 'flex',
     flex: 1,
     flexDirection: 'row-reverse',
   },
