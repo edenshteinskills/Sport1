@@ -7,11 +7,13 @@ import {
   SafeAreaView,
   Text,
 } from 'react-native';
-import MainArticle from '../components/MainArticle';
+import MainArticle from '../components/MainArticle/MainArticle';
 import articles from '../../fake_db/fake_main';
 import Article from '../types';
-import MyTeams from '../components/MyTeams';
+import MyTeams from '../components/MyTeams/MyTeams';
 import {useEffect} from 'react';
+import LastGames from '../components/LastGames/LastGames';
+import VOD_Card from '../components/VOD/VOD_Card';
 
 const MainFeedScreen = () => {
   const wait = (timeout: any) => {
@@ -47,10 +49,8 @@ const MainFeedScreen = () => {
           author={article.author}
         />
         <MyTeams />
-        <MyTeams />
-        <MyTeams />
-        <MyTeams />
-        <MyTeams />
+        <LastGames />
+        <VOD_Card />
       </ScrollView>
     </SafeAreaView>
   );

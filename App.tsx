@@ -5,8 +5,8 @@ import {createStackNavigator} from '@react-navigation/stack';
 import {NavigationContainer} from '@react-navigation/native';
 import SplashScreen from 'react-native-splash-screen';
 
-import LogoTitle from './src/components/LogoTitle';
-import HomeTabs from './src/components/HomeTabs';
+import LogoTitle from './src/components/LogoTitle/LogoTitle';
+import HomeTabs from './src/components/HomeTabs/HomeTabs';
 
 const Stack = createStackNavigator();
 

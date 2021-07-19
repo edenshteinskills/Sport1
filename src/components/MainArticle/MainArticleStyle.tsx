@@ -1,31 +1,8 @@
-import React from 'react';
-import {
-  View,
-  StyleSheet,
-  ImageBackground,
-  Dimensions,
-  Text,
-} from 'react-native';
+import {Dimensions, StyleSheet} from 'react-native';
 
-interface IProps {
-  title: String;
-  url: any;
-  author: String;
-}
-
-const MainArticle = ({title, url, author}: IProps) => {
-  return (
-    <View style={styles.card}>
-      <ImageBackground style={styles.image} source={url}>
-        <Text style={styles.main}>{title}</Text>
-        <Text style={styles.sub}>{author}</Text>
-      </ImageBackground>
-    </View>
-  );
-};
 const deviceWidth = Dimensions.get('window').width;
 
-const styles = StyleSheet.create({
+export default StyleSheet.create({
   card: {
     shadowColor: 'black',
     shadowOffset: {width: 0, height: 2},
@@ -62,5 +39,3 @@ const styles = StyleSheet.create({
     paddingRight: 10,
   },
 });
-
-export default MainArticle;

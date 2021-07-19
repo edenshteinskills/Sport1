@@ -12,6 +12,8 @@ import article_1 from './articles/article1.png';
 import article_2 from './articles/article2.png';
 import article_3 from './articles/article3.png';
 import article_4 from './articles/article4.png';
+import star from './images/star.png';
+import miniLogo from './images/mini_logo.png';
 
 export {
   article1,
@@ -28,4 +30,6 @@ export {
   article_2,
   article_3,
   article_4,
+  star,
+  miniLogo,
 };

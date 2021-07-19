@@ -1,19 +1,6 @@
-import React from 'react';
-import {View, Image, StyleSheet} from 'react-native';
+import {Dimensions, StyleSheet} from 'react-native';
 
-interface IProps {
-  image: any;
-}
-
-const CircleCard = ({image}: IProps) => {
-  return (
-    <View style={styles.card}>
-      <Image source={image} style={styles.img} />
-    </View>
-  );
-};
-
-const styles = StyleSheet.create({
+export default StyleSheet.create({
   card: {
     width: 60,
     height: 60,
@@ -35,5 +22,3 @@ const styles = StyleSheet.create({
     margin: 10,
   },
 });
-
-export default CircleCard;
