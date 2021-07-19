@@ -1,30 +1,7 @@
-import React from 'react';
-import {
-  Text,
-  View,
-  StyleSheet,
-  ImageBackground,
-  Dimensions,
-} from 'react-native';
+import {Dimensions, Platform, StyleSheet} from 'react-native';
 
-interface IProps {
-  title: String;
-  image: any;
-  section: String;
-}
-
-const ArticleCard = ({title, image, section}: IProps) => {
-  return (
-    <View>
-      <ImageBackground style={styles.image} source={image}>
-        <Text style={styles.section}>{section}</Text>
-      </ImageBackground>
-      <Text style={styles.title}>{title}</Text>
-    </View>
-  );
-};
 const width = Dimensions.get('window').width;
-const styles = StyleSheet.create({
+export default StyleSheet.create({
   card: {
     flex: 1,
     padding: 20,
@@ -48,18 +25,16 @@ const styles = StyleSheet.create({
   },
   section: {
     color: 'white',
-    fontSize: 10,
+    fontSize: Platform.OS === 'ios' ? 10 : 8,
     fontWeight: 'bold',
     textAlign: 'right',
     position: 'absolute',
     right: 5,
     top: 120,
-    paddingBottom: 20,
-    paddingRight: 10,
+    paddingBottom: 2,
+    paddingRight: 8,
     backgroundColor: 'black',
-    height: 22,
+    height: 25,
     width: 57,
   },
 });
-
-export default ArticleCard;

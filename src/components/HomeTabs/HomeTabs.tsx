@@ -1,7 +1,7 @@
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import ScoreBoardScreen from '../screens/ScoreBoardScreen';
-import MainFeedScreen from '../screens/MainFeedScreen';
+import ScoreBoardScreen from '../../screens/ScoreBoardScreen';
+import MainFeedScreen from '../../screens/MainFeedScreen';
 import {Image} from 'react-native';
 
 const Tab = createBottomTabNavigator();
@@ -34,8 +34,8 @@ const HomeTabs = () => {
                 style={{width: 15, height: 15}}
                 source={
                   focused
-                    ? require('../../assets/tab_bar_icons/score_green.png')
-                    : require('../../assets/tab_bar_icons/score_board.png')
+                    ? require('../../../assets/tab_bar_icons/score_green.png')
+                    : require('../../../assets/tab_bar_icons/score_board.png')
                 }
               />
             );
@@ -53,8 +53,8 @@ const HomeTabs = () => {
                 style={{width: 15, height: 15}}
                 source={
                   focused
-                    ? require('../../assets/tab_bar_icons/home_green.png')
-                    : require('../../assets/tab_bar_icons/home.png')
+                    ? require('../../../assets/tab_bar_icons/home_green.png')
+                    : require('../../../assets/tab_bar_icons/home.png')
                 }
               />
             );

@@ -1,25 +1,7 @@
-import React from 'react';
-import {View, Text, StyleSheet, Image, Dimensions} from 'react-native';
+import {Dimensions, StyleSheet} from 'react-native';
 
-interface IProps {
-  sectionTitle: String;
-  subTitle: String;
-}
-
-const TitleCard = ({sectionTitle, subTitle}: IProps) => {
-  return (
-    <View style={styles.card}>
-      <Image
-        source={require('../../assets/images/star.png')}
-        style={styles.img}
-      />
-      <Text style={styles.section}>{sectionTitle}</Text>
-      <Text style={styles.sub}>{subTitle}</Text>
-    </View>
-  );
-};
 const width = Dimensions.get('window').width;
-const styles = StyleSheet.create({
+export default StyleSheet.create({
   card: {
     flexDirection: 'row-reverse',
     shadowColor: 'black',
@@ -49,5 +31,3 @@ const styles = StyleSheet.create({
   },
   img: {width: 20, height: 20},
 });
-
-export default TitleCard;
