@@ -9,7 +9,7 @@ export default StyleSheet.create({
     shadowOpacity: 0.26,
     elevation: 8,
     backgroundColor: 'white',
-    padding: 20,
+    //padding: 20,
     marginBottom: 10,
     height: 200,
     width: width,

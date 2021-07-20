@@ -1,5 +1,5 @@
 import React from 'react';
-import {View} from 'react-native';
+import {Dimensions, View} from 'react-native';
 import Carousel, {Pagination} from 'react-native-snap-carousel';
 import games from '../../../fake_db/last_games';
 import VS_Card, {SLIDER_WIDTH, ITEM_WIDTH} from '../VS_Card/VS_Card';
@@ -11,6 +11,7 @@ const CarouselCards = () => {
   return (
     <View>
       <Carousel
+        activeSlideAlignment="center"
         layoutCardOffset={9}
         ref={isCarousel}
         data={games}
@@ -26,8 +27,8 @@ const CarouselCards = () => {
             />
           </View>
         )}
-        sliderWidth={300}
-        itemWidth={285}
+        sliderWidth={Dimensions.get('window').width}
+        itemWidth={Dimensions.get('window').width}
         onSnapToItem={index => setIndex(index)}
         useScrollView={true}
       />

@@ -14,6 +14,7 @@ import MyTeams from '../components/MyTeams/MyTeams';
 import {useEffect} from 'react';
 import LastGames from '../components/LastGames/LastGames';
 import VOD_Card from '../components/VOD/VOD_Card';
+import HotNews from '../components/HotNews/HotNews';
 
 const MainFeedScreen = () => {
   const wait = (timeout: any) => {
@@ -33,7 +34,7 @@ const MainFeedScreen = () => {
   const onRefresh = useCallback(() => {
     setRefreshing(true);
     getData();
-    wait(1000).then(() => setRefreshing(false));
+    wait(100).then(() => setRefreshing(false));
   }, []);
 
   return (
@@ -51,6 +52,7 @@ const MainFeedScreen = () => {
         <MyTeams />
         <LastGames />
         <VOD_Card />
+        <HotNews />
       </ScrollView>
     </SafeAreaView>
   );

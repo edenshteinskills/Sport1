@@ -11,7 +11,7 @@ export default StyleSheet.create({
     padding: 20,
     marginTop: 32,
     height: 100,
-    width: 310,
+    //width: 310,
     alignItems: 'center',
     flexDirection: 'row',
   },
