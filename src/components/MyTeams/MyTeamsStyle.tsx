@@ -1,4 +1,8 @@
 import {Dimensions, StyleSheet} from 'react-native';
+import {
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp,
+} from 'react-native-responsive-screen';
 
 const width = Dimensions.get('window').width;
 export default StyleSheet.create({
@@ -14,8 +18,16 @@ export default StyleSheet.create({
     marginBottom: 10,
     height: 410,
     width: width,
+    flex: 1,
+    alignContent: 'stretch',
+    //flexDirection: 'row-reverse',
+    //justifyContent: 'flex-start',
+    alignItems: 'center',
   },
-  item: {alignItems: 'center', justifyContent: 'center'},
+  item: {
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
   text: {
     marginLeft: 10,
   },

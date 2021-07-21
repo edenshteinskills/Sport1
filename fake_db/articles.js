@@ -7,6 +7,7 @@ const feedArticles = [
     image: article_1,
     section: 'אולימפידה',
     writer: 'דן דוידי',
+    time: 'לפני 3 שעות',
   },
   {
     id: '2',
@@ -14,6 +15,7 @@ const feedArticles = [
     image: article_2,
     section: 'ליגת העל',
     writer: 'דן דוידי',
+    time: 'לפני 3 שעות',
   },
   {
     id: '3',
@@ -22,6 +24,7 @@ const feedArticles = [
     image: article_3,
     section: 'ליגה אנגלית',
     writer: 'דן דוידי',
+    time: 'לפני 3 שעות',
   },
   {
     id: '4',
@@ -29,6 +32,7 @@ const feedArticles = [
     image: article_4,
     section: 'ליגה ספרדית',
     writer: 'דן דוידי',
+    time: 'לפני 3 שעות',
   },
 ];
 

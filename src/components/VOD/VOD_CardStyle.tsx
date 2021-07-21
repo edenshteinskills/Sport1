@@ -13,5 +13,6 @@ export default StyleSheet.create({
     marginBottom: 10,
     height: 400,
     width: width,
+    flex: 1,
   },
 });

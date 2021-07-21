@@ -20,6 +20,11 @@ import cristianoVideo from './videos/cristiano.mp4';
 import hot1large from './articles/hot1large.png';
 import hot2large from './articles/hot2large.png';
 import greenSlide from './images/greenslide.png';
+import sport1Tran from './images/sport1.png';
+import sport2Tran from './images/sport2.png';
+import electra from './companies/electra.png';
+import bazan from './companies/bazan.png';
+import ioptic from './companies/ioptic.png';
 
 export {
   article1,
@@ -44,4 +49,9 @@ export {
   hot1large,
   hot2large,
   greenSlide,
+  sport1Tran,
+  sport2Tran,
+  electra,
+  bazan,
+  ioptic,
 };

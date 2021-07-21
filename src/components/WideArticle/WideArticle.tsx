@@ -1,21 +1,18 @@
 import React from 'react';
-import {Text, View, ImageBackground} from 'react-native';
-import styles from './BigArticleCardStyle';
+import {Text, View, Image} from 'react-native';
+import styles from './WideArticleStyle';
 
 interface IProps {
   title: String;
   image: any;
-  section: String;
   writer: String;
   time: String;
 }
 
-const BigArticleCard = ({title, image, section, writer, time}: IProps) => {
+const WideArticle = ({title, image, writer, time}: IProps) => {
   return (
     <View style={styles.card}>
-      <ImageBackground style={styles.image} source={image}>
-        <Text style={styles.section}>{section}</Text>
-      </ImageBackground>
+      <Image style={styles.image} source={image} />
       <Text style={styles.title}>{title}</Text>
       <View style={styles.row}>
         <Text style={styles.time}>{time}</Text>
@@ -25,4 +22,4 @@ const BigArticleCard = ({title, image, section, writer, time}: IProps) => {
   );
 };
 
-export default BigArticleCard;
+export default WideArticle;

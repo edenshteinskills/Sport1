@@ -6,7 +6,7 @@ export default StyleSheet.create({
     shadowColor: 'black',
     shadowOffset: {width: 0, height: 2},
     shadowRadius: 6,
-    shadowOpacity: 0.26,
+    shadowOpacity: 1,
     elevation: 8,
     backgroundColor: 'white',
     padding: 30,
@@ -14,6 +14,7 @@ export default StyleSheet.create({
     width: width,
     marginTop: 35,
     position: 'absolute',
+    borderRadius: 5,
   },
   image: {
     height: 240,

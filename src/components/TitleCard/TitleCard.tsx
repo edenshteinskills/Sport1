@@ -1,4 +1,5 @@
 import React from 'react';
+import {ViewStyle} from 'react-native';
 import {View, Text, Image} from 'react-native';
 import styles from './TitleCardStyle';
 
@@ -19,6 +20,7 @@ const TitleCard = ({
 }: IProps) => {
   return (
     <View style={[styles.card, cardStyle]}>
+      <View style={styles.greenRec} />
       <Image source={image} style={styles.img} />
       <Text style={[styles.section, sectionStyle]}>{sectionTitle}</Text>
       <Text style={styles.sub}>{subTitle}</Text>
