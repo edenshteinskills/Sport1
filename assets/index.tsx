@@ -25,6 +25,7 @@ import sport2Tran from './images/sport2.png';
 import electra from './companies/electra.png';
 import bazan from './companies/bazan.png';
 import ioptic from './companies/ioptic.png';
+import articleBurger from './images/article_burger.png';
 
 export {
   article1,
@@ -54,4 +55,5 @@ export {
   electra,
   bazan,
   ioptic,
+  articleBurger,
 };

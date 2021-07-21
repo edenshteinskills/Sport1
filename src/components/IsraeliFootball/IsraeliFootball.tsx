@@ -7,6 +7,8 @@ import TitleCard from '../TitleCard/TitleCard';
 import WideArticle from '../WideArticle/WideArticle';
 import styles from './IsraeliFootballStyle';
 import feedArticles from '../../../fake_db/articles';
+import HeadlineCard from '../HeadlineCard/HeadlineCard';
+import {articleBurger} from '../../../assets';
 
 const IsraeliFootball = () => {
   const article =
@@ -43,6 +45,8 @@ const IsraeliFootball = () => {
         writer={feedArticles[2].writer}
         time={feedArticles[2].time}
       />
+      <HeadlineCard title={feedArticles[0].title} image={articleBurger} />
+      <HeadlineCard title={feedArticles[1].title} image={articleBurger} />
     </View>
   );
 };
