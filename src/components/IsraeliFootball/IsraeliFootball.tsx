@@ -12,6 +12,7 @@ const IsraeliFootball = () => {
   const article =
     largeArticles[Math.floor(Math.random() * largeArticles.length)];
   return (
+    //Test
     <View style={styles.card}>
       <TitleCard
         sectionTitle="כדורגל ישראלי"
