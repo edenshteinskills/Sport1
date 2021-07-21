@@ -14,6 +14,12 @@ import article_3 from './articles/article3.png';
 import article_4 from './articles/article4.png';
 import star from './images/star.png';
 import miniLogo from './images/mini_logo.png';
+import messiVideo from './videos/messi.mp4';
+import neymarVideo from './videos/neymar.mp4';
+import cristianoVideo from './videos/cristiano.mp4';
+import hot1large from './articles/hot1large.png';
+import hot2large from './articles/hot2large.png';
+import greenSlide from './images/greenslide.png';
 
 export {
   article1,
@@ -32,4 +38,10 @@ export {
   article_4,
   star,
   miniLogo,
+  messiVideo,
+  neymarVideo,
+  cristianoVideo,
+  hot1large,
+  hot2large,
+  greenSlide,
 };
