@@ -13,7 +13,7 @@ export default StyleSheet.create({
     height: 30,
     alignSelf: 'stretch',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'flex-end',
     width: width,
     position: 'absolute',
   },
@@ -29,5 +29,11 @@ export default StyleSheet.create({
     fontSize: 20,
     textAlign: 'left',
   },
-  img: {width: 20, height: 20},
+  img: {width: 20, height: 20, marginRight: 3},
+  greenRec: {
+    width: 6,
+    height: 30,
+    borderRadius: 5,
+    backgroundColor: '#02f784',
+  },
 });

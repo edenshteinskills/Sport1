@@ -6,6 +6,7 @@ const largeArticles = [
     title: 'כך הכול התחיל: \nסיפורה של האולימפיאדה הראשונה',
     image: hot1large,
     writer: 'שרון דוידוביץ׳',
+    time: 'לפני 3 שעות',
   },
   {
     id: '2',
@@ -13,6 +14,7 @@ const largeArticles = [
       'אנגליה בהלם: שחקן בכיר באברטון \n נעצר בחשד לביצוע עבירות מין בקטין',
     image: hot2large,
     writer: 'שרון דוידוביץ׳',
+    time: 'לפני 3 שעות',
   },
 ];
 

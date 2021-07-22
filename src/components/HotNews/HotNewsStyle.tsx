@@ -13,8 +13,9 @@ export default StyleSheet.create({
     marginBottom: 10,
     height: 950,
     width: width,
-    justifyContent: 'space-between',
+    justifyContent: 'flex-start',
     flexDirection: 'row-reverse',
+    flex: 1,
   },
   item: {alignItems: 'center', justifyContent: 'center'},
 });

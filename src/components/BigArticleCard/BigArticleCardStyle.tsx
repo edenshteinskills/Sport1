@@ -1,4 +1,8 @@
 import {Dimensions, Platform, StyleSheet} from 'react-native';
+import {
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp,
+} from 'react-native-responsive-screen';
 
 const width = Dimensions.get('window').width;
 export default StyleSheet.create({
@@ -6,13 +10,13 @@ export default StyleSheet.create({
     shadowColor: 'black',
     shadowOffset: {width: 0, height: 2},
     shadowRadius: 6,
-    shadowOpacity: 0.26,
+    shadowOpacity: 1,
     elevation: 8,
     backgroundColor: 'white',
     padding: 50,
     height: 500,
     width: width,
-    marginTop: 300,
+    marginTop: 330,
     marginLeft: 30,
   },
   image: {
@@ -39,12 +43,8 @@ export default StyleSheet.create({
     position: 'absolute',
   },
   writer: {
-    bottom: 0,
-    right: 0,
-    position: 'absolute',
     color: '#a0a0a0',
     fontSize: 20,
-    padding: 5,
   },
   section: {
     color: 'white',
@@ -53,11 +53,23 @@ export default StyleSheet.create({
     textAlign: 'right',
     position: 'absolute',
     right: 5,
-    top: 120,
+    top: 190,
     paddingBottom: 2,
     paddingRight: 8,
     backgroundColor: 'black',
     height: 25,
     width: 57,
+  },
+  row: {
+    flexDirection: 'row',
+    alignItems: 'flex-end',
+    flex: 1,
+    justifyContent: 'space-between',
+    width: wp('86%'),
+  },
+  time: {
+    color: '#a0a0a0',
+    fontSize: 20,
+    textAlign: 'left',
   },
 });

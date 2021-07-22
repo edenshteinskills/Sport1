@@ -33,6 +33,7 @@ const HotNews = () => {
               image={item.image}
               section={item.section}
               writer={item.writer}
+              time={item.time}
             />
           </View>
         )}

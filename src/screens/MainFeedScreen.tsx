@@ -15,6 +15,9 @@ import {useEffect} from 'react';
 import LastGames from '../components/LastGames/LastGames';
 import VOD_Card from '../components/VOD/VOD_Card';
 import HotNews from '../components/HotNews/HotNews';
+import BrodcastSchedule from '../components/BroadcastSchedule /BrodcastSchedule';
+import PlayAndWin from '../components/PlayAndWin/PlayAndWin';
+import IsraeliFootball from '../components/IsraeliFootball/IsraeliFootball';
 
 const MainFeedScreen = () => {
   const wait = (timeout: any) => {
@@ -53,6 +56,9 @@ const MainFeedScreen = () => {
         <LastGames />
         <VOD_Card />
         <HotNews />
+        <BrodcastSchedule />
+        <PlayAndWin />
+        <IsraeliFootball />
       </ScrollView>
     </SafeAreaView>
   );

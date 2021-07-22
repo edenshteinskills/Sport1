@@ -10,7 +10,7 @@ const LastGames = () => {
       <TitleCard
         sectionTitle="משחקים אחרונים"
         subTitle="לכל התוצאות"
-        image={greenSlide}
+        image={null}
       />
       <CarouselCards />
     </View>
