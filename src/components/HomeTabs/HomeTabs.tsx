@@ -24,6 +24,63 @@ const HomeTabs = () => {
         },
       }}>
       <Tab.Screen
+        name="More"
+        component={ScoreBoardScreen}
+        options={{
+          title: 'עוד',
+          tabBarIcon: ({focused}) => {
+            return (
+              <Image
+                style={{width: 15, height: 15}}
+                source={
+                  focused
+                    ? require('../../../assets/tab_bar_icons/more_green.png')
+                    : require('../../../assets/tab_bar_icons/more.png')
+                }
+              />
+            );
+          },
+        }}
+      />
+      <Tab.Screen
+        name="Brodcast"
+        component={ScoreBoardScreen}
+        options={{
+          title: 'שידורים',
+          tabBarIcon: ({focused}) => {
+            return (
+              <Image
+                style={{width: 18, height: 18}}
+                source={
+                  focused
+                    ? require('../../../assets/tab_bar_icons/live_green.png')
+                    : require('../../../assets/tab_bar_icons/live.png')
+                }
+              />
+            );
+          },
+        }}
+      />
+      <Tab.Screen
+        name="VOD"
+        component={ScoreBoardScreen}
+        options={{
+          title: 'VOD',
+          tabBarIcon: ({focused}) => {
+            return (
+              <Image
+                style={{width: 22, height: 15}}
+                source={
+                  focused
+                    ? require('../../../assets/tab_bar_icons/vod_green.png')
+                    : require('../../../assets/tab_bar_icons/vod.png')
+                }
+              />
+            );
+          },
+        }}
+      />
+      <Tab.Screen
         name="Score"
         component={ScoreBoardScreen}
         options={{

@@ -17,7 +17,7 @@ export default StyleSheet.create({
     marginTop: 10,
     marginBottom: 10,
     height: 410,
-    width: width,
+    width: wp('100%'),
     flex: 1,
     alignContent: 'stretch',
     //flexDirection: 'row-reverse',

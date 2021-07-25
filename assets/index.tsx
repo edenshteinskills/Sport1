@@ -26,6 +26,21 @@ import electra from './companies/electra.png';
 import bazan from './companies/bazan.png';
 import ioptic from './companies/ioptic.png';
 import articleBurger from './images/article_burger.png';
+import hot3large from './articles/hot3large.png';
+import hot4large from './articles/hot4large.png';
+import EnglishLeague from './leagues/english.png';
+import spanishLeague from './leagues/spanish.png';
+import italianLeague from './leagues/italian.png';
+import nbaLeague from './leagues/nba.png';
+import israelLeague from './leagues/israel.png';
+import yellowLogo from './images/yellowLogo.png';
+import gossip1 from './gossip/gossip1.png';
+import gossip2 from './gossip/gossip2.png';
+import viral from './images/viral.png';
+import podcast1 from './podcast/podcast1.png';
+import podcast2 from './podcast/podcast2.png';
+import podcast3 from './podcast/podcast3.png';
+import exclusive1 from './exclusive/exclusive1.png';
 
 export {
   article1,
@@ -49,6 +64,8 @@ export {
   cristianoVideo,
   hot1large,
   hot2large,
+  hot3large,
+  hot4large,
   greenSlide,
   sport1Tran,
   sport2Tran,
@@ -56,4 +73,17 @@ export {
   bazan,
   ioptic,
   articleBurger,
+  EnglishLeague,
+  israelLeague,
+  italianLeague,
+  nbaLeague,
+  spanishLeague,
+  yellowLogo,
+  gossip1,
+  gossip2,
+  viral,
+  podcast1,
+  podcast2,
+  podcast3,
+  exclusive1,
 };

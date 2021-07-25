@@ -16,8 +16,8 @@ export default StyleSheet.create({
     justifyContent: 'center',
   },
   img: {
-    width: 57,
-    height: 35,
+    width: 56,
+    height: 39,
     resizeMode: 'contain',
     margin: 10,
   },

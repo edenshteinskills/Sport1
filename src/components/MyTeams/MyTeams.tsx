@@ -13,6 +13,7 @@ const MyTeams = () => {
   return (
     <View style={styles.card}>
       <TitleCard sectionTitle="הקבוצות שלי" subTitle="עריכה" image={star} />
+
       <FlatList
         inverted
         horizontal={true}
@@ -26,6 +27,7 @@ const MyTeams = () => {
           </View>
         )}
       />
+
       <FlatList
         inverted
         horizontal={true}
