@@ -1,24 +1,37 @@
 import React from 'react';
 import {FlatList, Text, View} from 'react-native';
-import companies from '../../../fake_db/companies';
 import CircleCard from '../CircleCard/CicrleCard';
 import TitleCard from '../TitleCard/TitleCard';
-import styles from './PlayAndWinStyle';
+import styles from './GenericCircleListStyle';
 
-const PlayAndWin = () => {
+interface IProps {
+  sectionTitle: String;
+  subTitle: String;
+  arrayData: Array<T>;
+  image: any;
+  passedStyle: any;
+}
+
+const GenericCircleList = ({
+  sectionTitle,
+  subTitle,
+  arrayData,
+  image,
+  passedStyle,
+}: IProps) => {
   return (
     <View style={styles.card}>
       <TitleCard
-        sectionTitle="משתתפים וזוכים"
-        subTitle="לכל הנבחרים >"
-        image={null}
+        sectionTitle={sectionTitle}
+        subTitle={subTitle}
+        image={image}
       />
       <FlatList
         inverted
         horizontal={true}
         keyExtractor={(item): string => item.id}
         showsHorizontalScrollIndicator={false}
-        data={companies}
+        data={arrayData}
         renderItem={({item}) => (
           <View style={styles.item}>
             <CircleCard
@@ -38,7 +51,7 @@ const PlayAndWin = () => {
                 borderColor: '#cacaca',
               }}
             />
-            <Text style={styles.text}>{item.tournament}</Text>
+            <Text style={[styles.text, passedStyle]}>{item.text}</Text>
           </View>
         )}
       />
@@ -46,4 +59,4 @@ const PlayAndWin = () => {
   );
 };
 
-export default PlayAndWin;
+export default GenericCircleList;

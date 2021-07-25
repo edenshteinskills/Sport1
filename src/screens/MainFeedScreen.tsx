@@ -16,8 +16,18 @@ import LastGames from '../components/LastGames/LastGames';
 import VOD_Card from '../components/VOD/VOD_Card';
 import HotNews from '../components/HotNews/HotNews';
 import BrodcastSchedule from '../components/BroadcastSchedule /BrodcastSchedule';
-import PlayAndWin from '../components/PlayAndWin/PlayAndWin';
-import IsraeliFootball from '../components/IsraeliFootball/IsraeliFootball';
+import GenericCircleList from '../components/GenericCircleList/GenericCircleList';
+import GenericSportCard from '../components/GenericSportCard/GenericSportCard';
+
+import feedArticles from '../../fake_db/articles';
+import companies from '../../fake_db/companies';
+import leagues from '../../fake_db/leagues';
+import {star} from '../../assets';
+import Magazine from '../components/Magzine/Magazine';
+import ZoneCard from '../components/ZoneCard/ZoneCard';
+import ViralCard from '../components/ViralCard/ViralCard';
+import PodcastCard from '../components/PodcastCard/PodcastCard';
+import ExclusiveCard from '../components/ExclusiveCard/ExclusiveCard';
 
 const MainFeedScreen = () => {
   const wait = (timeout: any) => {
@@ -57,8 +67,50 @@ const MainFeedScreen = () => {
         <VOD_Card />
         <HotNews />
         <BrodcastSchedule />
-        <PlayAndWin />
-        <IsraeliFootball />
+        <GenericCircleList
+          sectionTitle={'משתתפים וזוכים'}
+          subTitle={'לכל הנבחרים >'}
+          arrayData={companies}
+          image={null}
+        />
+        <GenericSportCard
+          sectionTitle={'כדורגל ישראלי'}
+          subTitle={'לכל הכתבות >'}
+          arrayArticles={feedArticles}
+        />
+        <GenericCircleList
+          sectionTitle={'ליגות וענפים מועדפים'}
+          subTitle={'עריכה'}
+          arrayData={leagues}
+          image={star}
+          passedStyle={{fontSize: 15}}
+        />
+
+        <GenericSportCard
+          sectionTitle={'כדורגל עולמי'}
+          subTitle={'לכל הכתבות >'}
+          arrayArticles={feedArticles}
+        />
+        <Magazine />
+        <GenericSportCard
+          sectionTitle={'כדורסל ישראלי'}
+          subTitle={'לכל הכתבות >'}
+          arrayArticles={feedArticles}
+        />
+        <ZoneCard />
+        <GenericSportCard
+          sectionTitle={'כדורסל עולמי'}
+          subTitle={'לכל הכתבות >'}
+          arrayArticles={feedArticles}
+        />
+        <ViralCard />
+        <GenericSportCard
+          sectionTitle={'ענפים נוספים'}
+          subTitle={'לכל הכתבות >'}
+          arrayArticles={feedArticles}
+        />
+        <ExclusiveCard />
+        <PodcastCard />
       </ScrollView>
     </SafeAreaView>
   );

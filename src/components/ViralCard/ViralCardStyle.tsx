@@ -1,4 +1,4 @@
-import {Dimensions, StyleSheet} from 'react-native';
+import {Dimensions, Platform, StyleSheet} from 'react-native';
 import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
@@ -7,8 +7,8 @@ import {
 const width = Dimensions.get('window').width;
 export default StyleSheet.create({
   card: {
-    width: width,
-    height: 280,
+    width: Platform.OS === 'ios' ? wp('100%') : wp('105%'),
+    height: 244,
     borderRadius: 5,
     backgroundColor: '#ffffff',
     shadowColor: 'rgba(0, 0, 0, 0.03)',
@@ -19,23 +19,11 @@ export default StyleSheet.create({
     shadowRadius: 4,
     shadowOpacity: 1,
     flex: 1,
-    flexDirection: 'row-reverse',
-    justifyContent: 'flex-start',
     alignItems: 'center',
     marginBottom: 10,
   },
-  item: {alignItems: 'center', justifyContent: 'center'},
-  text: {
-    width: 88,
-    height: 34,
-    fontSize: 19,
-    fontWeight: 'normal',
-    fontStyle: 'normal',
-    lineHeight: 17,
-    letterSpacing: 0,
-    textAlign: 'center',
-    color: '#595959',
-    marginTop: 15,
-    paddingLeft: 7,
+  image: {
+    width: Platform.OS === 'ios' ? wp('100%') : wp('105%'),
+    height: 244,
   },
 });
